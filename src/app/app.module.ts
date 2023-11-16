@@ -4,17 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainChartComponentModule } from './main-chart/module';
+import { PdfMakeComponentModule } from './pdf-make/module';
+import { PdfGeneratorSelectorComponenttModule } from './pdf-generator-selector/module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MainChartComponentModule
+    PdfGeneratorSelectorComponenttModule,
+    MainChartComponentModule,
+    PdfMakeComponentModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

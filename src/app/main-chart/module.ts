@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
 import { MainChartComponent } from './main-chart.component';
 import { NgChartsModule } from 'ng2-charts';
-
+import { JSPDFRoutingModule } from './routing';
 
 @NgModule({
-  declarations: [
-    MainChartComponent,
-  ],
-  imports: [
-    NgChartsModule
-  ],
+  declarations: [MainChartComponent],
+  imports: [NgChartsModule, JSPDFRoutingModule],
   providers: [],
-  exports: [MainChartComponent],
+  exports: [],
 })
-export class MainChartComponentModule { }
+export class MainChartComponentModule {}

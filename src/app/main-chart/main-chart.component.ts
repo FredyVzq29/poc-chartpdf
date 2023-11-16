@@ -73,15 +73,15 @@ export class MainChartComponent implements OnInit {
     /**
      * * POC - This is a architecture to add text and images to the PDF using only FOR OF loops
      */
-    for (const text of builder.configText) {
-      pdfObject.setFontSize(text.fontSize);
-      pdfObject.setTextColor(text.color);
-      pdfObject.setFont(text.typography);
+    // for (const text of builder.configText) {
+    //   pdfObject.setFontSize(text.fontSize);
+    //   pdfObject.setTextColor(text.color);
+    //   pdfObject.setFont(text.typography);
 
-      for (const message of text.textArray) {
-        pdfObject.text(message.text, message.x, message.y);
-      }
-    }
+    //   for (const message of text.textArray) {
+    //     pdfObject.text(message.text, message.x, message.y);
+    //   }
+    // }
 
     pdfObject.addImage(this.stringImagePath, 'PNG', 50, 50, 200, 100);
     pdfObject.setFontSize(16);
